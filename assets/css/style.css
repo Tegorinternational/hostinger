@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+/* side nav css */
+.side-nav {
+  height: 100vh;
+  width: 0px;
+  position: fixed;
+  z-index: 40;
+  top: 0px;
+  left: 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
+ }
+
+.anim { 
+  transition: width 2s, height 2s, transform 0.3s;
+  font-size: 30px;
+ }
+ 
+.anim:active { 
+  transform: rotate(360deg);
+ }
+.fa-plus-square{
+  transform: rotate(45deg);
+}
+.fs{
+  font-family: 'Anton', sans-serif;
+}
+.spc{
+  letter-spacing: 2px;
+}
+
+.img-anim {
+  display: block;
+  transition: transform 0.8s;   /* smoother zoom */
+}
+.img-anim:hover {
+  transform: scale(1.8);
+  transform-origin: 50% 50%;
+}
+.img-anim-rot {
+  display: block;
+  transition: transform 0.8s;   /* smoother zoom */
+}
+.img-anim-rot:hover {
+  transform: rotate(10deg) scale(1.2);
+  transform-origin: 50% 50%;
+}
+.scroll_item_active{
+  background-color: #3E4489;
+}
+.bg-img{
+  background-image: url("/assets/imgs/header_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dropdown > details {
+  position: relative;
+  color: #000000;
+}
+details .summary-title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.dropdown > details .summary-content {
+  cursor: default;
+}
+.dropdown > details summary {
+  list-style: none;
+  
+}
+.dropdown > details > summary::-webkit-details-marker {
+    display: none;
+    
+}
+.dropdown > details > summary::before {
+    content: '➕';
+    float: right;
+    color: #000000;
+    font-size: 0.75rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.dropdown > details[open] > summary::before {
+    content: '➖';
+  }
+.dropdown  > details summary:focus {
+  outline: none;
+}
+.dropdown > summary:active {
+  color: #000;
+}
+.shadow-cstm{
+  box-shadow: 0px 5px 40px #C8C8C8;
+  z-index: 20;
+}
+.card-hover {
+  transition: all .4s ease-in-out;
+}
+.card-hover:hover {
+  transform: scale(1.1);
+  transition: all .4s ease-in-out;
+  z-index: 22;
+}
+.service-card-rot{
+  margin-top: -65px;
+}
+.border-18{
+  border-width: 15px;
+}
+.service{
+  transition: 0.5s;
+}
+.service .serviceIcon{
+  transition: 0.7s;
+}
+.service:hover{
+  transform: translateY(-40px);
+  transition: 0.5s;
+}
+.service:hover .c1{
+  background-image: linear-gradient(to right, #FF4600, #E5B900);
+}
+.service:hover .serviceIcon{
+  transform: rotate(40deg);
+  background-image: linear-gradient(to right, #FF4600, #E5B900);
+  transition: 0.7s;
+}
+.trun{
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
