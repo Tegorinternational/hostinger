@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet"h href="/assets/css/style.css">
+  
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  
+  <link rel="stylesheet" class=""class=""href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://tegorinternational.github.io/GitHub.io/css/cdncss/swipercdn.css">
+  <script src="https://tegorinternational.github.io/GitHub.io/js/cdnjs/swipercdn.js"></script>
+
+  <title>Hostinger Login/Signup - Redesigned website</title>
+  
+  <style>
+    .open_widget_btn{
+      background-color: #FF7600;
+      color: #FFFFFF;
+    }
+    .hr-h-1{
+      border-width: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  
+
+<!-- header -->
+<header translate="no" class="w-full shadow-lg mx-auto px-5 md:px-14 bg-gradient-to-r from-red-100 to-indigo-50 py-2 flex flex-wrap">
+    
+    
+    <!-- header logo -->
+    <div class="text-left mr-auto">
+      <img class="w-32" src="/assets/imgs/Hostinger.png" alt="" />
+    </div>
+    <!-- /header logo -->
+    
+    
+    
+    
+    <!-- mobile nav -->
+    <div class="text-right ml-auto my-auto md:hidden">
+      <a onclick="darklightmode(), themeToggle(this)" class="material-icons my-auto mt-1 text-indigo-600" style="font-size: 23px;">light_mode</a>
+    </div>
+   
+    <div class="text-right ml-6 my-auto md:hidden">
+      <a class="material-icons my-auto mt-1 text-indigo-600" style="font-size: 23px;" href="#">shopping_cart</a>
+    </div>
+    
+    <div class="text-right ml-6 my-auto md:hidden">
+      <span onclick="openNav(), myFunction(this)" class="fa fa-reorder my-auto anim text-indigo-600" style="font-size: 23px;"></span>
+    </div>
+    <!-- /mobile nav -->
+    
+    
+    
+    <!-- desktop nav -->
+    <div translate="no" class="flex flex-wrap my-auto hidden md:flex">
+      
+      <a class="ml-6 " href="#">Pricing</a>
+      <a class="ml-6 " href="#">Testimonials</a>
+      <a class="ml-6 " href="#">Services</a>
+      <a class="ml-6 " href="#">Hosting</a>
+      <a class="ml-6 " href="#">Domains</a>
+      <a class="ml-6 " href="#">Contact</a>
+      <a class="ml-6 " href="#">About</a>
+      
+      <a class="ml-6 material-icons" onclick="darklightmode(), themeToggle(this)">light_mode</a>
+      <a class="ml-6 material-icons" href="#">shopping_cart</a>
+      <a class="ml-6 material-icons" href="/login_signup.html">account_circle</a>
+      
+    </div>
+    <!-- /desktop nav -->
+    
+    
+  
+</header>
+<!-- /header -->
+
+<!-- side-nav -->
+<div translate="no" id="mySidenav" class="side-nav bg-gradient-to-r from-red-100 to-indigo-100">
+    <img class="w-32 mx-auto my-2" src="/assets/imgs/Hostinger.png" alt="">
+    <hr class="w-full border-black mt-0">
+    
+    <span onclick="closeNav()" class="text-left text-3xl hidden"></span>
+    
+    
+    <table class="ml-5 mt-10 text-lg w-full text-black">
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">home</td>
+        <td class="pl-4 py-3"><a href="">Home</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">money</td>
+        <td class="pl-4 py-3"><a href="">Pricing</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">dns</td>
+        <td class="pl-4 py-3"><a href="">Hosting</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">domain</td>
+        <td class="pl-4 py-3"><a href="">Domain</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">settings_suggest</td>
+        <td class="pl-4 py-3"> 
+        
+        <div class="dpdn dropdown w-4/5">
+          <details>
+            <summary>
+              Services
+            </summary>
+            <table>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Logo Designing</a></td>
+              </tr>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Branding</a></td>
+              </tr>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Development</a></td>
+              </tr>
+            </table>
+          </details>
+        </div>
+        
+        </td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">support_agent</td>
+        <td class="pl-4 py-3"><a href="">Support</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">account_circle</td>
+        <td class="pl-4 py-3"><a href="/login_signup.html">Register/ Login</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+<!-- /side-nav -->
+  
+<section class="">
+  <div class="w-full mx-auto flex flex-wrap py-20 px-10">
+    <!-- img -->
+    <div class="w-full md:w-1/2 mx-auto my-auto px-5 overflow-hidden rounded-lg pb-16 md:pb-0">
+      <img class="w-full mx-auto my-auto" src="/assets/imgs/login_signup.png" alt="">
+    </div>
+    
+    <div class="w-full md:w-1/2 mx-auto">
+      
+      <div class="w-full flex flex-wrap mx-auto px-5 py-3 bg-gray-200 border border-yellow-500 rounded">
+        <div class="w-1/2 pr-2">
+          <button class="w-full py-2 login_button rounded bg-white text-yellow-600 text-lg border border-yellow-500 open_widget_btn">LogIn - form
+          </button>
+        </div>
+        <div class="w-1/2 pl-2">
+          <button class="w-full py-2 register_button rounded bg-white text-yellow-500 text-lg border border-yellow-600">Signup - form
+          </button>
+        </div>
+      </div>
+      
+      <div class="w-full mx-auto bg-gray-100 px-3 mt-5 rounded-lg">
+        
+        <!-- login_form -->
+        <div class="w-full mx-auto login_form">
+          <form action="/login_successful.html" method="post">
+            
+            
+            
+            <label class="">
+              <input class="mt-8 py-2 px-2 rounded w-full border-2 border-red-600" type="email" name="email" id="email" value="" placeholder="Email" />
+            </label>
+            <br>
+            <label class="">
+              <input class="my-8 py-2 px-2 rounded w-full border-2 border-red-600" type="password" name="password" id="password" value="" placeholder="Password" />
+            </label>
+            <br>
+            
+            
+              <input class="w-full mx-auto text-center py-2 mb-3 px-3 bg-red-600 rounded-full text-white text-lg " type="submit" value="Log In">
+            <a href="#">Forget password ?</a>
+            
+            <div class="w-full mx-auto my-5">
+              <hr class="w-full my-10 hr-h-1 bg-black">
+              <a class="mx-auto block text-lg text-black text-center bg-gray-100 w-10" style="margin-top: -51px;">OR</a>
+            </div>
+            <p class="w-full text-center pb-5 font-medium text-black">Continue with</p>
+            <div class="w-full flex flex-wrap mx-auto px-2 ">
+              <!-- google -->
+              <div class="w-full mx-auto">
+                <button class="w-full py-2 bg-white border-2 border-yellow-500 text-yellow-500 rounded-full">Google</button>
+              </div>
+              <!-- facebook -->
+              <div class="w-full mx-auto mt-4">
+                <button class="w-full py-2 bg-white text-blue-600 rounded-full border-2 border-blue-600">Facebook
+                </button>
+              </div>
+              <p class="mt-5 mb-5 text-lg text-left text-indigo-900">Not a member yet? <a class="text-indigo-600" href="">Choose a hosting plan</a> and get started now!</p>
+            </div>
+            
+          </form>
+          
+        </div>
+        
+        <!-- signup_form -->
+        <div class="w-full mx-auto register_form">
+          <form action="/signup_successful.html" method="post">
+            
+            
+            <label class="">
+              <input class="mt-8 py-2 px-2 rounded w-full border-2 border-red-600" type="text" name="name" id="name" value="" placeholder="Full name" />
+            </label>
+            <br>
+            <label class="">
+              <input class="mt-8 py-2 px-2 rounded w-full border-2 border-red-600" type="email" name="email" id="email" value="" placeholder="Email" />
+            </label>
+            <br>
+            <label class="">
+              <input class="my-8 py-2 px-2 rounded w-full border-2 border-red-600" type="password" name="password" id="password" value="" placeholder="Password" />
+            </label>
+            <br>
+            
+            
+              <input class="w-full mx-auto text-center py-2 mb-3 px-3 border-2 bg-white border-indigo-600 rounded-full text-indigo-600 text-lg " type="submit" value="Sign In">
+            
+            <div class="w-full mx-auto my-5">
+              <hr class="w-full my-10 hr-h-1 bg-black">
+              <a class="mx-auto block text-lg text-black text-center bg-gray-100 w-10" style="margin-top: -51px;">OR</a>
+            </div>
+            <p class="w-full text-center pb-5 font-medium text-black">Continue with</p>
+            <div class="w-full flex flex-wrap mx-auto px-2 ">
+              <!-- google -->
+              <div class="w-full mx-auto">
+                <button class="w-full py-2 bg-white border-2 border-yellow-500 text-yellow-500 rounded-full">Google</button>
+              </div>
+              <!-- facebook -->
+              <div class="w-full mx-auto mt-4">
+                <button class="mb-6 w-full py-2 bg-white text-blue-600 rounded-full border-2 border-blue-600">Facebook
+                </button>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/jQuery.js"></script>
+<script src="/assets/js/side-nav.js"></script>
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/login_signup.js"></script>
+</body>
+</html>
