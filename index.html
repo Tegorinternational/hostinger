@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet"h href="/assets/css/style.css">
+  
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  
+  <link rel="stylesheet" class=""class=""href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://tegorinternational.github.io/GitHub.io/css/cdncss/swipercdn.css">
+  <script src="https://tegorinternational.github.io/GitHub.io/js/cdnjs/swipercdn.js"></script>
+
+  <title>Hostinger - Redesigned website</title>
+</head>
+
+<body>
+
+
+
+<!-- header -->
+<header translate="no" class="w-full shadow-lg mx-auto px-5 md:px-14 bg-gradient-to-r from-red-100 to-indigo-50 py-2 flex flex-wrap">
+    
+    
+    <!-- header logo -->
+    <div class="text-left mr-auto">
+      <img class="w-32" src="/assets/imgs/Hostinger.png" alt="" />
+    </div>
+    <!-- /header logo -->
+    
+    
+    
+    
+    <!-- mobile nav -->
+    <div class="text-right ml-auto my-auto md:hidden">
+      <a onclick="darklightmode(), themeToggle(this)" class="material-icons my-auto mt-1 text-indigo-600" style="font-size: 23px;">light_mode</a>
+    </div>
+   
+    <div class="text-right ml-6 my-auto md:hidden">
+      <a class="material-icons my-auto mt-1 text-indigo-600" style="font-size: 23px;" href="#">shopping_cart</a>
+    </div>
+    
+    <div class="text-right ml-6 my-auto md:hidden">
+      <span onclick="openNav(), myFunction(this)" class="fa fa-reorder my-auto anim text-indigo-600" style="font-size: 23px;"></span>
+    </div>
+    <!-- /mobile nav -->
+    
+    
+    
+    <!-- desktop nav -->
+    <div translate="no" class="flex flex-wrap my-auto hidden md:flex">
+      
+      <a class="ml-6 " href="#">Pricing</a>
+      <a class="ml-6 " href="#">Testimonials</a>
+      <a class="ml-6 " href="#">Services</a>
+      <a class="ml-6 " href="#">Hosting</a>
+      <a class="ml-6 " href="#">Domains</a>
+      <a class="ml-6 " href="#">Contact</a>
+      <a class="ml-6 " href="#">About</a>
+      
+      <a class="ml-6 material-icons" onclick="darklightmode(), themeToggle(this)">light_mode</a>
+      <a class="ml-6 material-icons" href="#">shopping_cart</a>
+      <a class="ml-6 material-icons" href="/login_signup.html">account_circle</a>
+      
+    </div>
+    <!-- /desktop nav -->
+    
+    
+  
+</header>
+<!-- /header -->
+
+<!-- side-nav -->
+<div translate="no" id="mySidenav" class="side-nav bg-gradient-to-r from-red-100 to-indigo-100">
+    <img class="w-32 mx-auto my-2" src="/assets/imgs/Hostinger.png" alt="">
+    <hr class="w-full border-black mt-0">
+    
+    <span onclick="closeNav()" class="text-left text-3xl hidden"></span>
+    
+    
+    <table class="ml-5 mt-10 text-lg w-full text-black">
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">home</td>
+        <td class="pl-4 py-3"><a href="#">Home</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">money</td>
+        <td class="pl-4 py-3"><a href="#">Pricing</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">dns</td>
+        <td class="pl-4 py-3"><a href="#">Hosting</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">domain</td>
+        <td class="pl-4 py-3"><a href="#">Domain</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">settings_suggest</td>
+        <td class="pl-4 py-3"> 
+        
+        <div class="dpdn dropdown w-4/5">
+          <details>
+            <summary>
+              Services
+            </summary>
+            <table>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Web Hosting</a></td>
+              </tr>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Domain</a></td>
+              </tr>
+              <tr>
+                <td class="text-gray-700 text-base"><a href="#">Email Hosting</a></td>
+              </tr>
+            </table>
+          </details>
+        </div>
+        
+        </td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">support_agent</td>
+        <td class="pl-4 py-3"><a href="#">Support</a></td>
+      </tr>
+      
+      <tr class="border-b border-black">
+        <td class="material-icons w-2 py-3">account_circle</td>
+        <td class="pl-4 py-3"><a href="/login_signup.html">Register/ Login</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+<!-- /side-nav -->
+
+
+<!-- header-hero -->
+<section class="text-gray-600 body-font">
+  <div class="mx-auto w-full py-5 md:py-32 bg-img">
+
+    <div class="text-center relative z-10 w-full px-5">
+          <p class="text-white text-3xl md:text-6xl font-medium pt-5">Web Hosting as Dynamic as Your Business</p>
+          
+          <p class="text-white text-6xl md:text-6xl font-semibold pt-5"><sup class="text-xl font-medium">₹</sup>149.00<sub class="text-xl font-medium">/mo</sub></p>
+          <h2 class="text-2xl md:text-4xl text-green-300 font-medium title-font mt-6 mb-5">Fast And Secure Web Hosting For Businesses</h2>
+          <p class="text-white inline-flex items-center pt-3 text-lg font-light md:text-2xl pb-5">Start your journey with our Premium plan and get a personal domain, lifetime SSL, and DDoS protection for free with a four-year subscription.</p>
+          
+          <div>
+            <button class="mx-auto text-center border-2 border-black text-white text-lg font-medium py-2 px-10 rounded-full bg-gradient-to-r from-red-600 to-yellow-500 hover:from-green-200 hover:to-blue-500 outline-none">Get Offer Now</button>
+          </div>
+          <p class="text-center text-white pt-4">Get exclusive 30-day money-back guarantee</p>
+        </div>
+    
+  </div>
+</section>
+<!-- /header-hero -->
+
+
+
+<!-- countdown -->
+<section class="">
+  <div class="mx-auto text-center pt-10 animate__animated animate__fadeInTopLeft">
+    <div class="text-center text-2xl md:text-3xl inline-block font-light">
+      
+      <div class="p-3 rounded-lg bg-yellow-400 inline-block text-white">
+        <span id="days" class="p-4 rounded bg-indigo-500 inline-block">00</span>
+        <div class="text-indigo-900 pt-2 text-sm md:text-base ">Days</div>
+      </div>
+      
+      <div class="p-3 rounded-lg bg-yellow-400 inline-block">
+        <span id="hours" class="p-4 rounded bg-indigo-500 inline-block text-white">00</span>
+        <div class="text-indigo-900 pt-2 text-sm md:text-base">Hours</div>
+      </div>
+      <div class="p-3 rounded-lg bg-yellow-400 inline-block">
+        <span id="min" class="p-4 rounded bg-indigo-500 inline-block text-white">00</span>
+        <div class="text-indigo-900 pt-2 text-sm md:text-base">Minutes</div>
+      </div>
+      <div class="p-3 rounded-lg bg-yellow-400 inline-block">
+        <span id="sec" class="p-4 rounded bg-indigo-500 inline-block text-white">00</span>
+        <div class="text-indigo-900 pt-2 text-sm md:text-base">Seconds</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- over -->
+<div class="mx-auto text-center text-indigo-800 py-5">
+  <p id="over" class="text-4xl text-center font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500"></p>
+</div>
+<!-- /count-down -->
+
+<!-- hero -->
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-3xl text-4xl mb-4 font-medium text-blue-800 fnt text-left w-full spc">Who are we?</h1>
+      <p class="mb-8 leading-relaxed font-light text-base text-black text-left">We are a web hosting company with a mission to help everyone who goes online succeed.
+      We accomplish this by continuously developing server technology, giving expert assistance, and ensuring a flawless online website hosting experience.</p>
+      <div class="text-center mx-auto">
+        <a class="text-center text-white text-xl py-2 px-5 bg-blue-800 rounded mx-auto" href="#">Register Now</a>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 overflow-hidden rounded-lg">
+      <img class="w-full object-cover object-center rounded-lg img-anim-rot" alt="hero" src="/assets/imgs/hostinger_hero.png">
+    </div>
+  </div>
+</section>
+<!-- /hero -->
+
+
+<!-- Pricing -->
+<section class="" id="pricing">
+  <div class="px-10 py-24 mx-auto w-full md:px-10">
+    
+    <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="text-3xl font-semibold title-font mb-4 text-blue-900 spc">PRICING</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Choose your Web Hosting plans.</p>
+    </div>
+    
+    
+    <div class="flex flex-wrap w-full mx-auto">
+      
+      <!-- card one -->
+      <div class="w-full md:w-1/3 py-2 rounded-md mt-10 md:mt-0 card-hover bg-white">
+        <div class="w-full mx-auto text-center text-indigo-600 shadow-xl rounded-md">
+          <div class="bg-gray-100 border-t-4 border-yellow-400 rounded-b-full mx-auto w-full">
+            <h1 class="w-full pt-6 pb-1 rounded-t-md text-xl font-medium">Single Web Hosting</h1>
+            <p class="pb-3">Ideal solution for beginner</p>
+          <div class="mx-auto my-auto text-sm py-4">
+            <span class="mr-2"><del>₹ 329.00</del></span> <span class="py-1 px-2 bg-indigo-600 text-white rounded text-sm">SAVE 79%</span>
+            
+            <div class="mt-6 mb-10 mx-auto"><span class="text-lg font-medium">₹</span><span class="text-6xl font-semibold">69</span><span class="">/mo</span>
+            </div>
+          </div>
+          </div>
+          
+          <div class="w-full mx-auto pt-5 px-5">
+            <div class="w-full mx-auto">
+              
+              <div class="w-full mx-auto text-left">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Top feature comparison</h2>
+                
+                <li type="none" class="ml-2">1 Website
+                </li>
+                <li type="none" class="ml-2">50 GB SSD Storage
+                </li>
+                <li type="none" class="ml-2">1 Email Account
+                </li>
+                <li type="none" class="ml-2">100 GB Bandwidth
+                </li>
+                <li type="none" class="ml-2">2 Databases
+                </li>
+                <li type="none" class="ml-2">~10000 Visits Monthly <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Security</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Unlimeted</span> <span>Free SSL</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Cloudflare</span> <span>Protected Nameservers</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Free Bonuses</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span>Weekly Backups</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-red-600">
+                  </i><span class="font-medium">Free</span> <span>Domain (₹749.00 value)</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">WordPress Options</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Managed</span> <span>Wordpress</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Wordpress</span> <span>Acceleration</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-red-600">
+                  </i><span>WordPress Staging Tool </span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Service and Support</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">30 days</span> <span>Money back Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">24/7/365</span> <span>support</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span>99.9% Uptime Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+                <!--
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-green-600">
+                  </i> 1 Website
+                </li>
+                -->
+                
+              <button class="text-lg rounded-full bg-indigo-600 py-2 w-4/5 mx-auto text-white my-5">Add to cart
+              </button>
+            </div>
+          </div>
+          
+          <div class="w-full mt-5 mx-auto bg-indigo-600 h-3 rounded-b-md md:rounded-bl-md"><!-- bottom line -->
+          </div>
+          
+        </div>
+      </div>
+      <!-- /card one -->
+      
+      <!-- card two -->
+      <div class="w-full md:w-1/3  rounded-md mt-10 md:mt-0 shadow-cstm card-hover bg-white">
+        <div class="w-full mx-auto text-center text-indigo-600 rounded-md">
+          <div class="bg-indigo-600 text-white rounded-b-full mx-auto w-full">
+            <h1 class="w-full pt-6 pb-1 rounded-t-md text-xl font-medium">Premium Web Hosting</h1>
+            <p class="pb-3">Perfect package for personal websites</p>
+            <div class="mx-auto my-auto text-sm py-4">
+              <span class="mr-2"><del>₹ 459.00</del></span> <span class="py-1 px-2 bg-indigo-600 text-white rounded text-sm">SAVE 68%</span>
+          
+              <div class="mt-6 mb-10 mx-auto"><span class="text-lg font-medium">₹</span><span class="text-6xl font-semibold">149.00</span><span class="">/mo</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full mx-auto pt-5 px-5">
+            <div class="w-full mx-auto">
+              
+              <div class="w-full mx-auto text-left">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Top feature comparison</h2>
+                
+                <li type="none" class="ml-2">100 Website
+                </li>
+                <li type="none" class="ml-2">100 GB SSD Storage
+                </li>
+                <li type="none" class="ml-2">Free Email Account
+                </li>
+                <li type="none" class="ml-2">Unlimited Bandwidth
+                </li>
+                <li type="none" class="ml-2">Unlimited Databases
+                </li>
+                <li type="none" class="ml-2">~25 000 Visits Monthly <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Security</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Unlimeted</span> <span>Free SSL</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Cloudflare</span> <span>Protected Nameservers</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Free Bonuses</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span>Weekly Backups</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Free</span> <span>Free Domain (₹749.00 value)</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">WordPress Options</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Managed</span> <span>Wordpress</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Wordpress</span> <span>Acceleration</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-red-600">
+                  </i><span>WordPress Staging Tool </span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Service and Support</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">30 days</span> <span>Money back Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">24/7/365</span> <span>support</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span>99.9% Uptime Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+                
+              <button class="text-lg rounded-full bg-indigo-600 py-2 w-4/5 mx-auto text-white my-5">Add to cart
+              </button>
+            </div>
+          </div>
+          
+          <!--
+          <div class="w-full mt-5 mx-auto bg-indigo-600 h-3 rounded-b-md"><!-- bottom line
+          </div>-->
+          
+        </div>
+      </div>
+      <!-- /card two -->
+      
+      <!-- card three -->
+      <div class="w-full md:w-1/3 py-2 rounded-md mt-10 md:mt-0 card-hover bg-white">
+        <div class="w-full mx-auto text-center text-indigo-600 shadow-xl rounded-md">
+          <div class="bg-gray-100 border-t-4 border-yellow-400 rounded-b-full mx-auto w-full">
+            <h1 class="w-full pt-6 pb-1 rounded-t-md text-xl font-medium">Business Web Hosting</h1>
+            <p class="pb-3">Optimized for small and medium businesses</p>
+          <div class="mx-auto my-auto text-sm py-4">
+            <span class="mr-2"><del>₹ 649.00</del></span> <span class="py-1 px-2 bg-indigo-600 text-white rounded text-sm">SAVE 62%</span>
+            
+            <div class="mt-6 pb-10 mx-auto"><span class="text-lg font-medium">₹</span><span class="text-6xl font-semibold">249.00</span><span class="">/mo</span>
+            </div>
+          </div>
+          
+          </div>
+          
+          <div class="w-full mx-auto pt-5 px-5">
+            <div class="w-full mx-auto">
+              
+              <div class="w-full mx-auto text-left">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Top feature comparison</h2>
+                
+                <li type="none" class="ml-2">100 Website
+                </li>
+                <li type="none" class="ml-2">200 GB SSD Storage
+                </li>
+                <li type="none" class="ml-2">Free Email Account
+                </li>
+                <li type="none" class="ml-2">Unlimited Bandwidth
+                </li>
+                <li type="none" class="ml-2">Unlimited Databases
+                </li>
+                <li type="none" class="ml-2">~100 000 Visits Monthly <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Security</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Unlimeted</span> <span>Free SSL</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Cloudflare</span> <span>Protected Nameservers</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Free Bonuses</h2>
+                
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Daily </span><span>Backups(₹1,380.00 value)</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-red-600">
+                  </i><span class="font-medium">Free</span> <span>Domain (₹749.00 value)</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">WordPress Options</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Managed</span> <span>Wordpress</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">Wordpress</span> <span>Acceleration</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-red-600">
+                  </i><span>WordPress Staging Tool </span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+              
+              <div class="w-full mx-auto text-left my-5">
+                <h2 class="w-full text-lg font-medium mb-2 text-indigo-800">Service and Support</h2>
+              
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">30 days</span> <span>Money back Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span class="font-medium">24/7/365</span> <span>support</span> <span class="fa fa-info-circle"></span>
+                </li>
+                <li type="none" class="ml-2">
+                  <i class="bi bi-check2-square text-green-600">
+                  </i><span>99.9% Uptime Guarantee</span> <span class="fa fa-info-circle"></span>
+                </li>
+              </div>
+                <!--
+                <li type="none" class="ml-2">
+                  <i class="bi bi-x-circle text-green-600">
+                  </i> 1 Website
+                </li>
+                -->
+                
+              <button class="text-lg rounded-full bg-indigo-600 py-2 w-4/5 mx-auto text-white my-5">Add to cart
+              </button>
+            </div>
+          </div>
+          
+          <div class="w-full mt-5 mx-auto bg-indigo-600 h-3 rounded-b-md md:rounded-bl-md"><!-- bottom line -->
+          </div>
+          
+        </div>
+      </div>
+      <!-- /card three -->
+      
+    </div>
+  </div>
+</section>
+<!-- /Pricing -->
+
+
+
+<!-- testimonials -->
+<section class="" id="feedback">
+  <div class="px-5 py-24 mx-auto w-full md:px-10">
+    
+    <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="text-3xl font-semibold title-font mb-4 text-blue-900 spc">TESTIMONIALS</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Let's hear what our clients want to say.</p>
+        </div>
+        
+    <div class="w-full rounded-lg mx-auto">
+            <div class="w-full mx-auto p-4 bg-indigo-50 rounded-lg">
+              <div class="p-0 mx-auto rounded-lg bg-white md:px-20">
+      
+      
+    <div class="swiper mySwiper mx-auto w-full">
+      <div class="swiper-wrapper mx-auto w-full">
+        
+        
+        <div class="swiper-slide md:w-1/2 mx-auto">
+<div class="w-full lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="Tegor International" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://tegorinternational.github.io/Resume-builder-App/assets/profile.png">
+          <p class="leading-relaxed">Best service, I ever got from a hosting provider.  Never experienced any downtime.  High speed servers with lightning fast application loading and that 99.9% uptime is all I ever wanted.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Client</h2>
+          <p class="text-gray-500">COMPANY</p>
+        </div>
+      </div>
+        </div>
+        
+        
+        <div class="swiper-slide md:w-1/2 mx-auto">
+<div class="w-full lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="Tegor International" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://tegorinternational.github.io/Resume-builder-App/assets/profile.png">
+          <p class="leading-relaxed">Best service, I ever got from a hosting provider.  Never experienced any downtime.  High speed servers with lightning fast application loading and that 99.9% uptime is all I ever wanted.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Client</h2>
+          <p class="text-gray-500">COMPANY</p>
+        </div>
+      </div>
+        </div>
+        
+        
+        <div class="swiper-slide md:w-1/2 mx-auto">
+<div class="w-full lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="Tegor International" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://tegorinternational.github.io/Resume-builder-App/assets/profile.png">
+          <p class="leading-relaxed">Best service, I ever got from a hosting provider.  Never experienced any downtime.  High speed servers with lightning fast application loading and that 99.9% uptime is all I ever wanted.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Client</h2>
+          <p class="text-gray-500">COMPANY</p>
+        </div>
+      </div>
+        </div>
+        
+        
+        <div class="swiper-slide md:w-1/2 mx-auto">
+<div class="w-full lg:mb-0 mb-6 p-4">
+        <div class="h-full text-center">
+          <img alt="Tegor International" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://tegorinternational.github.io/Resume-builder-App/assets/profile.png">
+          <p class="leading-relaxed">Best service, I ever got from a hosting provider.  Never experienced any downtime.  High speed servers with lightning fast application loading and that 99.9% uptime is all I ever wanted.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Client</h2>
+          <p class="text-gray-500">COMPANY</p>
+        </div>
+      </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+     </div>
+    </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+<!-- /testimonials -->
+
+
+<!-- Services -->
+<section class="" id="services">
+  <div class="px-10 py-24 mx-auto w-full md:px-10">
+    
+    <div class="flex flex-col text-center w-full mb-32">
+          <h1 class="text-3xl font-semibold title-font mb-4 text-blue-900 spc">Services</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Hosting Service with The Resources You Need.</p>
+    </div>
+    
+    
+    <div class="flex flex-wrap w-full mx-auto">
+      
+      <!-- card one -->
+      <div class="w-full md:w-1/3 px-2 service">
+        
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+          
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot ">
+            <a class="material-icons my-auto mx-auto text-white" style="font-size: 70px;">security</a>
+          </div>
+          </div>
+          
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">Total Security</h2>
+            <p class="trun">Your web server security is very important to us. You can rest assured that your website will be secure thanks to CloudLinux and LVE containerized environment, comprehensive DDoS protection, automated website backups, auto-updates, in-house WAF, and other security features. In addition, all Premium and Business web hosting plans include a free SSL certificate for extra site protection.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card one -->
+      
+      <!-- card two -->
+      <div class="w-full md:w-1/3 px-2 mt-32 md:mt-0 service">
+        
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+          
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot">
+            <a class="material-icons my-auto mx-auto text-white" style="font-size: 70px;">tune</a>
+          </div>
+          </div>
+          
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">Complete Control</h2>
+            <p class="trun">You don't have to worry about compromising your code or website with Hostinger. Whether you're trying out different PHP versions or looking for ways to optimize your databases, chances are we've got you covered. SSH, WP-CLI, PHP version control, Git integration, MySQL management, and more tools are available to keep you in control of your shared servers.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card two -->
+      
+      <!-- card three -->
+      <div class="w-full md:w-1/3 px-2 mt-32 md:mt-0 service">
+      
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+      
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot">
+              <a class="material-icons my-auto mx-auto text-white" style="font-size: 70px;">storage</a>
+            </div>
+          </div>
+      
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">Global Data Centers</h2>
+            <p class="trun">Looking for the best hosting in India with local data centres? We've got your back. Here are the locations of our data centres: 
+            <br>• Asia (Singapore, India)
+            <br>• North America (the USA)
+            <br>• South America (Brazil)
+            <br>• Europe (the Netherlands, Lithuania, the United Kingdom)We also provide self-service data centre location changes. Once a month, you can switch your data centre location for faster website loading for your visitors.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card three -->
+      
+    </div>
+    
+    
+    <div class="flex flex-wrap w-full mx-auto mt-32">
+      
+      <!-- card four -->
+      <div class="w-full md:w-1/3 px-2 service">
+        
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+          
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot">
+            <a class="fa fa-wordpress my-auto mx-auto text-white" style="font-size: 70px;"></a>
+          </div>
+          </div>
+          
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">Managed WordPress</h2>
+            <p class="trun">Our managed WordPress hosting comes with ready-to-use features, so you can start building your website right away. Enjoy our user-friendly control panel, 1-click installer, and automatic WordPress patches. In addition, get pre-installed WordPress performance plugins and marketing tools to grow your online presence.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card four -->
+      
+      <!-- card five -->
+      <div class="w-full md:w-1/3 px-2 mt-32 md:mt-0 service">
+        
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+          
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot">
+            <a class="material-icons my-auto mx-auto text-white" style="font-size: 70px;">published_with_changes</a>
+          </div>
+          </div>
+          
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">WordPress Staging</h2>
+            <p class="trun">Our hosting plans include the WordPress staging environment. As a result, you can create a copy of your website and experiment with alternative layouts, content, and plugins, only publishing your changes when you're ready.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card five -->
+      
+      <!-- card six -->
+      <div class="w-full md:w-1/3 px-2 mt-32 md:mt-0 service">
+      
+        <div class="w-full flex flex-wrap mx-auto bg-indigo-600 rounded-lg shadow-lg c1">
+      
+          <div class="w-full mx-auto flex flex-wrap">
+            <div class="serviceIcon text-gray-400 border-18 border-white flex bg-indigo-600 mx-auto w-32 h-32 rounded-full my-auto service-card-rot">
+              <a class="material-icons my-auto mx-auto text-white" style="font-size: 70px;">commit</a>
+            </div>
+          </div>
+      
+          <div class="w-full mx-auto text-white px-5 pt-5 pb-10">
+            <h2 class="text-xl text-center font-semibold mb-5 border border-white py-2 px-3 mx-auto rounded-full">Unmatched Performance</h2>
+            <p class="trun">We care about the performance of your website. That's why we employ cutting-edge technology from HTTP/3 and IPv6 to LiteSpeed web servers and CDNs to power your website. All Premium and Business plans include unmetered bandwidth, so you won't have to worry about your website's speed.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /card six -->
+      
+    </div>
+    
+    
+  </div>
+</section>
+<!-- /Services -->
+
+
+<!-- Guarantee + Newsletter -->
+<section class="">
+  <div class="px-5 md:px-10 py-24 mx-auto flex flex-wrap items-center">
+    
+    
+    
+    <div class="w-full md:w-1/2 rounded-lg md:pr-2">
+      
+      <div class="flex flex-col w-full h-full">
+        
+       <h1 class="text-4xl md:text-6xl text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500 font-medium mb-5">
+         30-Day Money-Back guarantee
+       </h1>
+       <p class="text-lg text-indigo-900 text-center">
+         We'll refund your payment if you’re not 100% satisfied with Hostinger. No hassle, no risk.
+       </p>
+       <button class="mt-10 mx-auto p-1 text-lg rounded text-center bg-gradient-to-r from-red-500 to-yellow-500">
+         <span class="block w-full h-full text-indigo-600 px-10 py-2 bg-gradient-to-r from-white to-white hover:from-red-500 hover:to-yellow-500 hover:text-white text-lg font-medium">Get started Now
+         </span>
+       </button>
+        
+      </div>
+    </div>
+    
+    
+    
+    <div class="w-full md:w-1/2 rounded-lg md:pl-10 mt-20 md:mt-0">
+      <div class="w-full bg-indigo-50 rounded-lg  p-8 flex flex-col">
+      <h2 class="text-indigo-900 text-lg font-medium title-font mb-2">Get Our Newsletter</h2>
+      
+      <div>
+        <form action="/successful.html">
+          <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+          <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-2">
+          
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-2">
+          
+          <!--<label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>-->
+          
+          <button type="submit" class="mt-5 w-full text-white bg-indigo-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">SUBSCRIBE</button>
+          <p class="text-xs text-gray-500 mt-3">It helps us to give you New updates.</p>
+        </form>
+      </div>
+      
+      
+    </div>
+    </div>
+    
+  </div>
+</section>
+<!-- /Guarantee + Newsletter -->
+
+
+<!-- footer -->
+<footer class="">
+  <div class="mx-auto w-full mt-20 bg-indigo-50">
+    
+    
+    <div class="px-5 pt-10">
+    
+    <!-- footer nav -->
+    <div class="w-full mx-auto flex flex-wrap font-light">
+      
+      <div class="w-1/2 md:w-1/4 p-3 mb-3">
+        <h2 class="text-indigo-900 text-xl mb-1 font-medium spc">PRODUCTS</h2>
+        <li type="none" class="text-lg"><a href="#">Web Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">Cloud Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">Wordpress Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">Shared Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">VPS Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">Domains</a></li>
+        <li type="none" class="text-lg"><a href="#">Website builder</a></li>
+        <li type="none" class="text-lg"><a href="#">Private Servers</a></li>
+        <li type="none" class="text-lg"><a href="#">Email Hosting</a></li>
+        <li type="none" class="text-lg"><a href="#">Hostinger Email Hosting</a></li>
+      </div>
+      
+      <div class="w-1/2 md:w-1/4 p-3 mb-3">
+        <h2 class="text-indigo-900 text-xl mb-1 font-medium spc">COMPANY</h2>
+        <li type="none" class="text-lg"><a href="#">Home</a></li>
+        <li type="none" class="text-lg"><a href="#">About</a></li>
+        <li type="none" class="text-lg"><a href="#">Blog</a></li>
+        <li type="none" class="text-lg"><a href="#">Community</a></li>
+        <li type="none" class="text-lg"><a href="#">Careers</a></li>
+        <li type="none" class="text-lg"><a href="#">Reviews</a></li>
+      </div>
+      
+      <div class="w-1/2 md:w-1/4 p-3 mb-3">
+        <h2 class="text-indigo-900 text-xl mb-1 font-medium spc">LEGAL</h2>
+        <li type="none" class="text-lg"><a href="#">Legal Information</a></li>
+        <li type="none" class="text-lg"><a href="#">Privacy policy</a></li>
+        <li type="none" class="text-lg"><a href="#">Terms of Service</a></li>
+        <li type="none" class="text-lg"><a href="#">Terms and conditions</a></li>
+        <li type="none" class="text-lg"><a href="#">Report abuse</a></li>
+      </div>
+      
+      <div class="w-1/2 md:w-1/4 p-3 mb-3">
+        <h2 class="text-indigo-900 text-xl mb-1 font-medium spc">SUPPORT</h2>
+        <li type="none" class="text-lg"><a href="#">Contact</a></li>
+        <li type="none" class="text-lg"><a href="#">Support Center</a></li>
+        <li type="none" class="text-lg"><a href="#">Tutorials</a></li>
+        <li type="none" class="text-lg"><a href="#">Community</a></li>
+        <li type="none" class="text-lg"><a href="#">Careers</a></li>
+        <li type="none" class="text-lg"><a href="#">Reviews</a></li>
+      </div>
+      
+      <div class="w-1/2 md:w-1/4 p-3 mb-3">
+        <h2 class="text-indigo-900 text-xl mb-1 font-medium spc">Google reviews</h2>
+        <img class="w-32 bg-white" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeDCWyPJv7xDq4TpBiS1MmNh9tcH4e8zU8Q&usqp=CAU" alt="">
+      </div>
+        
+    </div>
+    
+    </div>
+    
+    <!-- copyright holder -->
+    <div class="w-full py-4 bg-indigo-900 text-white">
+      <p class="text-center font-light"><span>© 2004-2022 hostinger.in - India’s #1 Web Hosting & Domains provider.</span></p>
+    </div>
+    
+    
+    
+  </div>
+</footer>
+<!-- /footer -->
+
+
+<script src="/assets/js/side-nav.js"></script>
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/count-down.js"></script>
+<script src="https://tegorinternational.github.io/GitHub.io/js/swiperjs.js"></script>
+</body>
+
+</html>
